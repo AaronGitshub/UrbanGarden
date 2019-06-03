@@ -1,0 +1,14 @@
+input {
+    display: block;
+    
+  }
+  
+  /* Name */
+  input[type="text"] {
+   
+  }
+  
+  /* email */
+  input[type="email"] {
+      
+  }
