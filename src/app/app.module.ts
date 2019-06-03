@@ -14,7 +14,6 @@ import { PokeService } from './services/pokemon.service';
 import { HttpClientModule } from '@angular/common/http';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,9 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     MatTableModule
   ],
-  providers: [
-    PokeService
-  ],
+  
+  providers: [ PokeService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

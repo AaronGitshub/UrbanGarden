@@ -2,6 +2,20 @@
     font-size: 2em;
 }
 
-#pika {
-    text-align: right;
+img {
+    width: 11em;
 }
+
+#bulb {
+    padding-left: 12em;
+}
+#pika {
+    padding-left: 3em;
+}
+.flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-grid-thirds .col {
+    width: 32%;
+  }
