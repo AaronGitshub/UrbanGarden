@@ -3,7 +3,9 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 const ApiUrl = 'https://pokeapi.co/api';
 
-@Injectable()
+@Injectable({
+  providedIn: 'root'
+})
 export class PokeService {
   constructor(private _http:HttpClient) { }
 
