@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PokeService } from './services/pokemon.service'
 
 
 @NgModule({
@@ -20,9 +22,10 @@ import { ContactComponent } from './contact/contact.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ PokeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
