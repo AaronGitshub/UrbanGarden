@@ -1,5 +1,5 @@
 export interface Pokemon {
-    PokeId: number;
+    PokeId?: number;
     PokeName: string;
-    PokePic: string;
+
 }
