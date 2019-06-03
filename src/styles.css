@@ -19,8 +19,15 @@ a {
     top: 0;
 }
 
+.center-content {
+    text-align: center;
+    display: block;
+}
+
 section {
     width: 80%;
     margin: 0 auto;
     padding: 2em;
 }
+
+
