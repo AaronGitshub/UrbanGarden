@@ -8,14 +8,15 @@ import { AboutComponent } from './about/about.component';
 import { ProductsComponent } from './products/products.component';
 import { ContactComponent } from './contact/contact.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     AboutComponent,
-    ProductsComponent,
-    ContactComponent
-
+    ContactComponent,
+    AboutComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
