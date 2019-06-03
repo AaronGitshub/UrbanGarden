@@ -8,7 +8,6 @@ const routes: Routes = [
   {path: 'pokemon', component: ProductsComponent},
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent}
-  
 ];
 
 @NgModule({
