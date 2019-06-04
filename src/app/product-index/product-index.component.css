@@ -23,3 +23,30 @@ mat-table {
     background-color: darkred;
     color: white;
   }
+
+
+  /* ---PROOF OF CONCEPT WORK---- */
+  #pokemons {
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center !important;
+  }
+  
+  #pokemons td, #pokemons th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center !important;
+
+  }
+  
+  #pokemons tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #pokemons tr:hover {background-color: #ddd;}
+  
+  #pokemons th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: darkred;
+    color: white;
+  }

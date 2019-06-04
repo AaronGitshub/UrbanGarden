@@ -1,25 +1,64 @@
 <h1 style="text-align:center; padding-bottom: 10px;">Pokemon List</h1>
 
 <div>
-  <mat-table #table [dataSource]="dataSource" >
+  <mat-table #table [dataSource]="dataSource">
     <mat-header-row *matHeaderRowDef="columnNames"></mat-header-row>
     <mat-row *matRowDef="let row; columns: columnNames;"></mat-row>
-    
+
     <ng-container matColumnDef="details">
       <mat-header-cell *matHeaderCellDef class="matColumnSize"></mat-header-cell>
       <mat-cell *matCellDef="let pokemon" routerLink="/pokemon/detail/{{pokemon.PokeId}}">
         <i class="material-icons">library_books</i></mat-cell>
-      </ng-container>
-      
-      <ng-container matColumnDef="PokeId">
-        <mat-header-cell *matHeaderCellDef> Pokemon # </mat-header-cell>
-        <mat-cell *matCellDef="let pokemon"> {{pokemon.PokeId}} </mat-cell>
-      </ng-container>
-      
-      <ng-container matColumnDef="PokeName">
-        <mat-header-cell *matHeaderCellDef> Pokemon Name </mat-header-cell>
-        <mat-cell *matCellDef="let pokemon"> {{pokemon.PokeName}} </mat-cell>
-      </ng-container>
-    
+    </ng-container>
+
+    <ng-container matColumnDef="PokeId">
+      <mat-header-cell *matHeaderCellDef> Pokemon # </mat-header-cell>
+      <mat-cell *matCellDef="let pokemon"> {{pokemon.PokeId}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="PokeName">
+      <mat-header-cell *matHeaderCellDef> Pokemon Name </mat-header-cell>
+      <mat-cell *matCellDef="let pokemon"> {{pokemon.PokeName}} </mat-cell>
+    </ng-container>
+
   </mat-table>
+</div>
+
+<div>
+  <table id="pokemons">
+    <tr>
+      <th>Pokemon #</th>
+      <th>Pokemon Name</th>
+      <th>PokePic</th>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td>Bulbasaur</td>
+      <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"></td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Ivysaur</td>
+      <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png"></td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Venusaur</td>
+      <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png"></td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Charmander</td>
+      <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"></td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Charmeleon</td>
+      <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png"></td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Charizard</td>
+      <td><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png"></td>
+  </table>
 </div>
