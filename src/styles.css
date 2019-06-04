@@ -2,6 +2,8 @@
 body, html {
     height: 100%;
     margin: 0 auto;
+    padding-top: 35px;
+    overflow: auto;
 }
 
 a {
@@ -30,4 +32,38 @@ section {
     padding: 2em;
 }
 
+/* ----BUTTON---- */
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
 
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+a {
+	font-size: 14px;
+	line-height: 1.7;
+	color: #ffffff;
+	margin: 0px;
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+}
+
+a:focus {
+	outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+    outline: #000 solid !important;
+	color: #000;
+}
