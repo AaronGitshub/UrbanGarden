@@ -1,7 +1,7 @@
-<h1>Index</h1>
+<h1 style="text-align:center; padding-bottom: 10px;">Pokemon List</h1>
 
 <div>
-  <mat-table #table [dataSource]="dataSource">
+  <mat-table #table [dataSource]="dataSource" >
     <mat-header-row *matHeaderRowDef="columnNames"></mat-header-row>
     <mat-row *matRowDef="let row; columns: columnNames;"></mat-row>
     

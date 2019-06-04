@@ -5,8 +5,8 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 
 const routes: Routes = [ 
+  {path: 'index', component: ProductIndexComponent},
   {path: 'pokemon', component: ProductIndexComponent},
-  
   {path: 'about', component: AboutComponent},
   {path: 'contact', component: ContactComponent}
   
